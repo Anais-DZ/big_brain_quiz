@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Braah+One&family=Outfit:wght@100..900&display=swap");
+
+body {
+    background: url(../backGround/backgroundPastel.jpg);
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 0.5fr;
+    background: #e7d9f2;
+    box-shadow: 0px 8px 12px rgb(239, 239, 239);
+    color: rgba(243, 243, 243, 0.876);
+    font-family: "Outfit", serif;
+}
+
+.bigBrain {
+    grid-row: 1 / span 2;
+    height: 125px;
+    margin-left: 20px;
+}
+
+.svgUtilisateur {
+    height: 45px;
+    transform: translateX(25px);
+}
+
+.divUtilisateur {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: black;
+    margin-right: 25px;
+    h4 {
+        letter-spacing: 1px;
+        transform: translateY(5px);
+    }
+    p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: small;
+        transform: translateY(-16px);
+    }
+}
+
+ul {
+    padding: 0;
+}
+
+.contenaire {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.navHeader {
+    display: flex;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+}
+.nav:hover {
+    background: #e1c1fa;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: 0.6s;
+}
+
+#accueil {
+    list-style-type: none;
+}
+
+#classement {
+    list-style-type: none;
+}
+
+#contact {
+    list-style-type: none;
+}
+#connexion {
+    list-style-type: none;
+}
+
+.containerQuestion {
+    font-family: "Outfit", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(194, 133, 209, 0.212);
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid #d181e52f;
+}
+
+.groupe {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        list-style-type: none;
+
+        p {
+            padding: 20px 20px 30px 20px;
+            font-size: 30px;
+        }
+
+        li {
+            border: 1px solid #d181e5;
+            width: 80%;
+            border-radius: 10px;
+            padding: 13px;
+            text-align: left;
+            background-color: #edbbfa;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            scale: 1.02;
+            border-bottom: 3px solid #c25cdc;
+            background-color: #e89ffa;
+        }
+
+        li > label {
+            font-size: 25px;
+            margin-left: 10px;
+        }
+    }
+
+    .bouton {
+        padding: 20px;
+        margin-left: 37%;
+        margin-top: 15px;
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 8px;
+            background-color: #3e0d8b;
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .btn:hover {
+        scale: 1.1;
+    }
+}
+.titre {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(194, 133, 209, 0.212);
+    width: 40%;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: "Braah One", serif;
+    letter-spacing: 1px;
+    margin-top: 110px;
+    margin-left: 30%;
+    border: 1px solid #d181e52f;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    background-color: #e7d9f2;
+    box-shadow: 0px 12px 16px rgba(182, 17, 17, 0.978);
+}
+
+.logoFooter {
+    grid-column: 1;
+    height: 70px;
+    margin-left: 10px;
+    justify-self: flex-start;
+}
+
+.navFooter {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    justify-content: space-between;
+    li {
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    p {
+        margin-top: 0;
+    }
+}
+.ulFooter {
+    display: flex;
+    justify-content: space-between;
+}
